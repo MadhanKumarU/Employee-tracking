@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Employee Tracker Dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="/static/dashboard/style.css">
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header class="header">
+      <h1>Employee Productivity Dashboard</h1>
+    </header>
+
+    <!-- Employee & Date Selection -->
+    <section class="card">
+      <div class="row">
+        <div>
+          <label class="label">Select Employee</label>
+          <select id="employeeSelect" class="input"></select>
+        </div>
+
+        <div>
+          <label class="label">Select Date</label>
+          <input type="date" id="datePicker" class="input">
+        </div>
+
+        <button id="loadBtn" class="btn primary">Load Data</button>
+      </div>
+    </section>
+
+    <!-- Daily usage -->
+    <section class="card">
+      <h2>App Usage Summary</h2>
+      <div id="usageContainer" class="list"></div>
+    </section>
+
+    <!-- Live overview -->
+    <section class="card">
+      <h2>Live Overview (Updated Every 5s)</h2>
+      <div id="liveContainer" class="list"></div>
+    </section>
+
+    <footer class="footer">
+      <small>Local Demo</small>
+    </footer>
+
+  </div>
+
+  <script src="/static/dashboard/app.js"></script>
+</body>
+</html>
