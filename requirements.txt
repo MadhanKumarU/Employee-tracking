@@ -3,3 +3,7 @@ uvicorn
 sqlalchemy
 pymysql
 pydantic
+pyspark
+apache-airflow
+pandas
+snowflake-connector-python
